@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Excusively online-Up to 50% off</title>
+</head>
+<body>
+    <style>
+    body{
+        margin: 0px;
+        top: 0px;
+       
+      }
+      /* Navbar styling */
+    
+    .header-bar {
+    background-color: #f96332;
+    padding:5px ;
+    text-align: center;
+    color: white;
+}
+
+.header-bar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f96332;
+
+}
+
+.navbar .logo  a{
+    text-decoration: none;
+    color: #f96332;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Increased spacing between items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #f96332;
+    color: white;
+}
+
+.navbar .icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    color:black;
+}
+
+    /* Circle images styling */
+    .sale-items {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 30px;
+    }
+
+    .sale-item {
+      text-align: center;
+    }
+
+    .sale-item img {
+      width: 80px;
+      height:80px;
+      border-radius: 50%;
+    }
+
+    .sale-item p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .sale-items a{
+      color: #000;
+      text-decoration: none;
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  text-align: center;
+}
+.des span{
+  border: 1px solid rgb(250, 212, 143);
+   border-radius: 15px;
+   padding: 3px;
+    background-color: rgb(245, 220, 174);
+
+}
+
+.img-container img{
+  border-radius: 10%;
+}
+
+.img-container i{
+  border: 1px solid #f96332;
+   border-radius: 15px;
+   padding: 3px;
+background-color: #f96332;
+color: #fff;
+}
+
+.img-container .desc{
+  text-align:left;
+  margin-left: 140px;
+}
+
+.img-container span{
+  text-decoration: line-through;
+  text-align: start;
+  color: rgb(151, 149, 149);
+}
+
+.img-container em{
+  border: 7px solid rgb(248, 205, 212);
+  background-color:  rgb(248, 205, 212);
+  border-radius: 15px;
+  font-size: 12px;
+  text-align: center;
+  color:rgb(238, 76, 76) ;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+        * {
+  box-sizing: border-box;
+}
+
+.boxs {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.boxs i{
+  font-size: 25px;
+
+}
+.box {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+.box button{
+  margin-left: 25%;
+   border-radius: 15px;
+    padding: 8px;
+     background-color: black; 
+     color: white;
+}
+.man {
+  float: left;
+  width: 20%;
+}
+
+
+* Media Queries for Mobile Devices */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img {
+        width: 80%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
+.slideshow {
+    max-width: 500px;
+    margin:auto;
+    overflow: hidden;
+    margin-left: 130px;
+  }
+  .slideshow img {
+    width: 66%;
+    height: 350px;
+    display: none;
+   
+  }
+
+        </style>
+        
+        <body>
+            <!-- Navbar -->
+    <header>
+      <div class="header-bar">
+          <p>Shop up to 50% OFF on your favourite summer styles from our End of Season Sale <a href="#">now</a></p>
+      </div>
+  </header>
+
+  <nav class="navbar">
+      <div class="logo"><a href="index.html" >KHAADI </a></div>
+      <ul>
+          <li><a href="#">SALE</a></li>
+          <li><a href="#">NEW IN</a></li>
+          <li><a href="#">#INSTAKHAADI</a></li>
+          <li><a href="#">FABRICS</a></li>
+          <li><a href="#">READY TO WEAR</a></li>
+          <li><a href="#">FRAGRANCES</a></li>
+          <li><a href="#">HOME</a></li>
+      </ul>
+      <div class="icons">
+
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+  </nav>
+
+<br><br><br>
+  <!-- Sale items -->
+  <div class="sale-items">
+    <div class="sale-item">
+    <a href="khaadi 2pag.html" > <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw2477c988/images/megamenu/0.0-breeze-thumbnails.jpg" alt="Just In: 70%">
+      <p>Sale Best<br> Sellers</p>
+      </a>
+    </div>
+   
+        <div class="sale-item">
+      <a href="khaadi 3pag.html"> <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dwfa936da8/images/megamenu/0.0-bloom-thumbnails.jpg" alt="Just In: Sale">
+      <p>Excusively<br> online</p>
+      </a>
+    </div>
+    
+    <div class="sale-item">
+    <a href="khaadi 4pag.html" > <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-storefront-catalog-pak/default/dwda8baf55/images/megamenu/thumbnailsFABRICSFLAT50.jpg" alt="Just In: 30%">
+      <p>Just In:<br> 50% off</p>
+      </a>
+    </div>
+    
+  </div>
+
+  <br><br><br><br>
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://uk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw6b89ea7d/images/hi-res/bsl240417_maroon_1.jpg?sw=800&sh=1200" alt="Italy" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta
+     <br><br>
+     <span>  PKR 2,000</span>PKR 1,000<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+<div class="img-container">
+<div class="slideshow">
+  <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw4b11dc42/images/hi-res/bme24056_black_1.jpg?sw=800&sh=1200" alt="Dog 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfDwA_-KLhxkaEBSqDBxyWvmY1owp8hYY-3_sFN966qgN5YK8Eeovy107O2oe1JMvk3bE&usqp=CAU" alt="Dog 2">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOf2i19K4FuPBdeFdFYaBObsm0FR9VUUJu-ub97is5-UGjLWwGwGqZeZVZPpRziCxtIo&usqp=CAU" alt="Dog 3">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRji8HxSBAotzmpafA3-bzgyc_Azp6CPSYnknjS9hGlP8rhCRdulbzzfJTKHIjnn_klpzM&usqp=CAU" alt="Dog 3">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNpp24KvOR8uqaxEQJKxYw5Q2Xo3NiuTr7kR1ivGhqR3khbvGSjkijAXoWLNdpb3Z_sM&usqp=CAU" alt="Dog 3">
+
+</div>
+</div>
+
+<script>
+  // Get all images
+  const images = document.querySelectorAll('.slideshow img');
+  let currentIndex = 0;
+
+  // Function to show current image and hide others
+  function showImage(index) {
+    images.forEach((img, i) => {
+      if (i === index) {
+        img.style.display = 'block';
+      } else {
+        img.style.display = 'none';
+      }
+    });
+  }
+
+  // Function to change image automatically
+  function changeImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    showImage(currentIndex);
+  }
+
+  // Show the first image initially
+  showImage(currentIndex);
+
+  // Change image every 3 seconds (adjust interval as needed)
+  setInterval(changeImage, 3000);
+</script>
+
+
+  <div class="img-container">
+  <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw9d394ea8/images/hi-res/bsl240421st_beige_1.jpg?sw=800&sh=1200" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta
+     <br><br>
+  <span>  PKR 3,500</span> PKR 1,750<br><br>
+ <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+</div>
+<br><br><br><br>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://www.thefashionstation.in/wp-content/uploads/2024/05/bcs240305_navy_4.jpg" alt="Italy" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 2,000</span>PKR 1,000<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+
+<div class="img-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ayFavbKgvZC2zbHW-B3YOzWqeY52FUi43KF57ILlxs3a3Xw4z0ufRT0ZdZIAYNwJ4bE&usqp=CAU" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 2,000</span>PKR 1,000<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+
+  <div class="img-container">
+  <img src="https://www.thefashionstation.in/wp-content/uploads/2024/05/bco240310_charcoal_1.jpg" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>  
+</div>
+</div>
+
+<br><br><br><br>
+
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw34af7891/images/hi-res/lla240103_beige_4.jpg" alt="Italy" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 2,000</span>PKR 1,000<br><br>
+ <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+  <div class="img-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5okN6Haz3Kx4zVtDjpDTaervFqR9eYQtbNje6w7iZWe9sy5Jx5fsYVM2mu0z1NWkNss&usqp=CAU" alt="Forest" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 2,000</span>PKR 1,000<br><br>
+ <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+  <div class="img-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTTgWUDV0Pbpzq9I70en5HWi6kFbb80dxOHO1Bbw9Kp7AtVRQpJQadPPAmgls1FNl3E8c&usqp=CAU" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+  <span>  PKR 2,000</span>PKR 1,000<br><br>
+ <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+</div>
+
+<br><br><br><br>
+
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUqGl_vHLLIErDuwA2yUDYvMzpLamcv2TuHtEXKEG0RrYfXM1tiX2ExAPUbw52ipcXhdw&usqp=CAU" alt="Italy" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+  <div class="img-container">
+  <img src="https://i0.wp.com/www.gracereplicastore.com/wp-content/uploads/2024/02/DSC03441.jpg?fit=247%2C371&ssl=1" alt="Forest" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+  <div class="img-container">
+  <img src="https://i0.wp.com/www.gracereplicastore.com/wp-content/uploads/2024/02/DSC03390.jpg?fit=247%2C371&ssl=1" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+</div>
+
+<br><br><br><br>
+
+
+
+<div class="clearfix">
+  <div class="img-container">
+    <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/ala231209_cream_1.jpg" alt="Forest" style="height: 350px;">
+
+    <br><br>
+    <div class="desc">
+      Dupatta
+       <br><br>
+       <span>  PKR 2,000</span>PKR 1,000<br><br>
+       <i >30% off</i> <em>   Exclusively Online</em>
+    </div>
+</div>
+  <div class="img-container">
+  <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/ala231215_d-green_1-600x900.jpg" alt="Forest" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+  </div>
+  <div class="img-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrp37hN6kQr4SnJAr_Ig6HC8PbZu8DI-sMomHXMtGYuQkxs62FuIjqqbPIweu5L9MtWXo&usqp=CAU" alt="Mountains" style="height: 350px;">
+  <br><br>
+  <div class="desc">
+    Dupatta      
+     <br><br>
+     <span>  PKR 3,500</span> PKR 1,750<br><br>
+     <i >30% off</i> <em>   Exclusively Online</em>
+  </div>
+</div>
+</div>
+
+<br><br><br>
+<hr>
+<div class="clearfix">
+  <div class="boxs">
+    <h2>NEED HELP?</h2>
+  </div>
+  <div class="boxs">
+  <p><i class="fa fa-phone"></i>    080 74007</p>
+  </div>
+  <div class="boxs">
+  <p><i class="fa fa-envelope"></i>       EMAIL US</p>
+  </div>
+</div>
+<hr width="100%">
+
+
+<div class="clearfix">
+  <div class="box">
+    <h4 style="margin-left: 10%;">HELP</h4>
+    <p style="margin-left: 10%;">
+Track Your Order<br><br>
+Terms & Conditions<br><br>
+Privacy Policy
+    </p>
+  </div>
+  <div class="box">
+  <h4>CUSTOMERY SUPPORT</h4>
+<p>
+Customer Service<br><br>
+Store Locator<br><br>
+Disclaimer<br><br>
+Shipping & Handling<br><br>
+Returns & Exchanges<br><br>
+FAQs
+</p>
+  </div>
+  <div class="box">
+  <h4>MORE FORM KHAADI</h4>
+  <p>
+About Us<br><br>
+Contact Us<br><br>
+Blogs
+  </p>
+  </div>
+  <div class="box">
+   <h4> GET IN TOUCH</h4>
+   <p>
+0800 74007<br><br>
+customercare@khaadi.com<br><br>
+GET THE LATEST NEWS<br><br>
+Email Address <button >Confirm</button>
+   </p>
+   <hr>
+    </div>
+</div>
+<br>
+<hr>
+<div class="clearfix">
+  <div class="man">
+    <h2 style="color: white;">jkg,jm</h2>
+  </div>
+  <div class="man">
+  <p><i> 100% Safe Checkout </i> </p>
+  <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw3d659671/images/FooterImages/pay.png">
+
+  </div>
+  <div class="man">
+  <p><i>Secured by </i> </p>
+  <img src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif">
+  </div>
+
+  <div class="man">
+    <p style="margin-left: 1%;"><i>Copyright © 2023 Khaadi Pakistan (SMC-Pvt)    </i> </p>
+    <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw6994d6b6/images/FooterImages/Khaadi-Logo.png" style="margin-left: 25%;width: 20%;">
+    </div>
+</div>
+
+ </body>
+</html>

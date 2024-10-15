@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider with Dots</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    /* Main container for image and dots */
+    .slider-container {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: ;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Styling for images */
+    .slides {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Styling for dots on right side */
+    .dots-container {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      margin: 8px 0;
+      background-color:white;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: white;
+    }
+
+    
+    /* Navbar styling */
+    
+    .header-bar {
+    background-color: #f96332;
+    padding:5px ;
+    text-align: center;
+    color: white;
+}
+
+.header-bar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f96332;
+
+}
+
+.navbar .logo  a{
+    text-decoration: none;
+    color: #f96332;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Increased spacing between items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #f96332;
+    color: white;
+}
+
+.navbar .icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    color:black;
+}
+
+
+  </style>
+</head>
+<body>
+
+
+
+    <header>
+        <div class="header-bar">
+            <p>Shop up to 50% OFF on your favourite summer styles from our End of Season Sale <a href="#">now</a></p>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+      <div class="logo"><a href="index.html" >KHAADI </a></div>
+      <ul>
+          <li><a href="#">SALE</a></li>
+          <li><a href="#">NEW IN</a></li>
+          <li><a href="#">#INSTAKHAADI</a></li>
+          <li><a href="#">FABRICS</a></li>
+          <li><a href="#">READY TO WEAR</a></li>
+          <li><a href="#">FRAGRANCES</a></li>
+          <li><a href="#">HOME</a></li>
+      </ul>
+      <div class="icons">
+  
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+  </nav>
+
+  <!-- Main slider container -->
+  <div class="slider-container">
+    <div class="slides">
+    <a href="khaadi 2pag.html" ><img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw01be31a1/images/homepage/0.0-1dress-erica-desktop-home-bannner-1920x1080-fc.jpg" alt="Image 1" class="slide active"></a>
+    <a href="khaadi 3pag.html" > <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw58aaf2b3/images/homepage/0.0-1zara-style-desktop-home-bannner-1920x1080-fc.jpg" alt="Image 2" class="slide"></a>
+    <a href="khaadi 4pag.html" > <img src="https://i0.wp.com/dressesbazar.com/wp-content/uploads/2023/07/Khaadi-winter-sale-collectionbannrt.jpg?ssl=1" alt="Image 3" class="slide"></a>
+    </div>
+
+    <!-- Dots container on the right side -->
+    <div class="dots-container">
+      <div class="dot active" onclick="showSlide(0)"></div>
+      <div class="dot" onclick="showSlide(1)"></div>
+      <div class="dot" onclick="showSlide(2)"></div>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    // Function to show specific slide and update dots
+    function showSlide(index) {
+      // Hide all slides and deactivate all dots
+      slides.forEach((slide, i) => {
+        slide.style.display = 'none';
+        dots[i].classList.remove('active');
+      });
+
+      // Show the selected slide and activate the corresponding dot
+      slides[index].style.display = 'block';
+      dots[index].classList.add('active');
+
+      // Update current index
+      currentIndex = index;
+    }
+
+    // Initialize by showing the first slide
+    showSlide(0);
+  </script>
+ 
+</body>
+</html>

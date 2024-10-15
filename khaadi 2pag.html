@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Khaadi 3piece Lawn</title>
+    <style>
+        body{
+            
+
+            margin: 0px;
+            padding: 0px;
+           
+           
+        }
+        /* Navbar styling */
+    
+    .header-bar {
+    background-color: #f96332;
+    padding:5px ;
+    text-align: center;
+    color: white;
+}
+
+.header-bar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f96332;
+
+}
+
+.navbar .logo  a{
+    text-decoration: none;
+    color: #f96332;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Increased spacing between items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #f96332;
+    color: white;
+}
+
+.navbar .icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    color:black;
+}
+
+
+ /* Circle images styling */
+ .sale-items {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 30px;
+    }
+
+    .sale-item {
+      text-align: center;
+    }
+
+    .sale-item img {
+      width: 80px;
+      height:80px;
+      border-radius: 50%;
+    }
+
+    .sale-item p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .sale-items a{
+      color: #000;
+      text-decoration: none;
+    }
+
+.charset{
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple rows */;
+}
+
+        /* Container for rows */
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    /* Flexbox for each row */
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    /* Styling for each image slider box */
+    .slider-box {
+      width: 20%; /* Adjusted for 3 sliders per row */
+      background-color: ;
+      box-shadow:;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+
+   
+
+    
+
+    .slider-text i{
+  border: 1px solid #f96332;
+   border-radius: 15px;
+   padding: 3px;
+background-color: #f96332;
+color: #fff;
+}
+
+
+
+.slider-text span{
+  text-decoration: line-through;
+  text-align: start;
+  color: rgb(151, 149, 149);
+}
+
+.slider-text em{
+  border: 7px solid rgb(248, 205, 212);
+  background-color:  rgb(248, 205, 212);
+  border-radius: 15px;
+  font-size: 12px;
+  text-align: center;
+  color:rgb(238, 76, 76) ;
+}
+
+
+        * {
+  box-sizing: border-box;
+}
+
+.boxs {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.boxs i{
+  font-size: 25px;
+
+}
+.box {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+.box button{
+  margin-left: 25%;
+   border-radius: 15px;
+    padding: 8px;
+     background-color: black; 
+     color: white;
+}
+.man {
+  float: left;
+  width: 20%;
+  margin-left: 50px;
+}
+
+
+* Media Queries for Mobile Devices */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery img {
+        width: 80%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <p>Shop up to 50% OFF on your favourite summer styles from our End of Season Sale <a href="#">now</a></p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" >KHAADI </a></div>
+        <ul>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">NEW IN</a></li>
+            <li><a href="#">#INSTAKHAADI</a></li>
+            <li><a href="#">FABRICS</a></li>
+            <li><a href="#">READY TO WEAR</a></li>
+            <li><a href="#">FRAGRANCES</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+        <div class="icons">
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+
+<br><br><br>
+  <!-- Sale items -->
+  <div class="sale-items">
+    <div class="sale-item">
+    <a href="khaadi 2pag.html" > <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw2477c988/images/megamenu/0.0-breeze-thumbnails.jpg" alt="Just In: 70%">
+      <p>Sale Best<br> Sellers</p>
+      </a>
+    </div>
+   
+        <div class="sale-item">
+      <a href="khaadi 3pag.html"> <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dwfa936da8/images/megamenu/0.0-bloom-thumbnails.jpg" alt="Just In: Sale">
+      <p>Excusively<br> online</p>
+      </a>
+    </div>
+    
+    <div class="sale-item">
+    <a href="khaadi 4pag.html" > <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-storefront-catalog-pak/default/dwda8baf55/images/megamenu/thumbnailsFABRICSFLAT50.jpg" alt="Just In: 30%">
+      <p>Just In:<br> 50% off</p>
+      </a>
+    </div>
+    
+  </div>
+
+  <br><br><br><br>
+  <div class="container">
+    <!-- First row -->
+    <div class="row">
+      <div class="slider-box">
+        <div class="slides" id="slider1">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwcc82f026/images/hi-res/bcs240103_red_4.jpg" alt="Seventh Image">
+        <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw0ea700fe/images/hi-res/bcs240103_red_3.jpg" alt="Eighth Image">
+        </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed
+            <br><br>
+         <span>   PKR 20,000</span> PKR 14,000<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider2">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw6644d23e/images/hi-res/bcs240104_beige_1.jpg" alt="Thirteenth Image">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw0ee6a21c/images/hi-res/bcs240104_beige_2.jpg" alt="Fourteenth Image">
+        </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed            
+            <br><br>
+            <span>  PKR 5,500</span> PKR 3,850<br><br>
+            <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider3">
+            <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwb7047ce5/images/hi-res/bcs240101_black_1.jpg?sw=800&sh=1200" alt="Seventeenth Image">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwf7d0382f/images/hi-res/bcs240101_black_3.jpg" alt="Eighteenth Image">
+        </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed
+            <br><br>
+         <span>   PKR 6,000</span> PKR 4,200<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="row">
+      <div class="slider-box">
+        <div class="slides" id="slider4">
+            <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw3249d91f/images/hi-res/eeb245217a_l-pink_1.jpg?sw=400&sh=600" alt="Image 11">
+            <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwcfbe482a/images/hi-res/eet245245a_l-pink_1.jpg?sw=400&sh=600" alt="Image 12">
+          </div>
+          <br>
+        <div class="slider-text">
+            Kurta
+            <br><br>
+         <span>   PKR 20,000</span> PKR 14,000<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider5">
+            <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwba3c49c6/images/hi-res/eet245247b_brown_2.jpg?sw=400&sh=600" alt="Image 11">
+            <img src="https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dwe922fb62/images/hi-res/eeb245219b_brown_2.jpg?sw=400&sh=600" alt="Image 12">
+          </div>
+          <br>
+          <div class="slider-text">
+            Kurta
+            <br><br>
+            <span>  PKR 5,500</span> PKR 3,850<br><br>
+
+            <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider6">
+          <img src="https://uk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw53d15e49/images/hi-res/eet24690a_pink_1.jpg?sw=400&sh=600" alt="Image 11">
+          <img src="https://uk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw474ad307/images/hi-res/eeb24690a_pink_2.jpg?sw=400&sh=600" alt="Image 12">
+        </div>
+        <br>
+        <div class="slider-text">
+            Kurta
+            <br><br>
+            <span>   PKR 6,000</span> PKR 4,200<br><br>
+
+            <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Third row -->
+    <div class="row">
+      <div class="slider-box">
+        <div class="slides" id="slider7">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/cs240804_l-blue_1-600x900.jpg" alt="Image 13">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/cs240804_l-blue_2-600x900.jpg" alt="Image 14">
+        </div>
+        <br>
+        <div class="slider-text">
+          Slub Lawn | Embroidered            
+            <br><br>
+         <span>   PKR 20,000</span> PKR 14,000<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider8">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/cs240803_brown_1-600x900.jpg" alt="Image 15">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/me240804_beige_1-600x900.jpg" alt="Image 16">
+        </div>
+        <br>
+        <div class="slider-text">
+          Messuri | Embroidered            
+            <br><br>
+            <span>  PKR 5,500</span> PKR 3,850<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider9">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/ca240804_green_1.jpg" alt="Image 17">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2024/09/ca240804_green_2.jpg" alt="Image 18">
+        </div>
+        <br>
+        <div class="slider-text">
+          Slub Lawn | Embroidered
+            <br><br>
+            <span>   PKR 6,000</span> PKR 4,200<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!-- Fourth row -->
+    <div class="row">
+      <div class="slider-box">
+        <div class="slides" id="slider10">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/bla231235_pink_1-600x900.jpg" alt="Eleventh Image">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/bla231235_pink_4.jpg" alt="Twelfth Image">
+        </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed
+
+            <br><br>
+         <span>   PKR 20,000</span> PKR 14,000<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider11">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/ala231250_maroon_1-600x900.jpg" alt="Fifth Image">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/ala231250_maroon_2-600x900.jpg" alt="Sixth Image">
+        </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed            
+            <br><br>
+         <span>   PKR 20,000</span> PKR 14,000<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+      <div class="slider-box">
+        <div class="slides" id="slider12">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/jla231202_l-pink_1-600x900.jpg" alt="Third Image">
+            <img src="https://www.thefashionstation.in/wp-content/uploads/2024/01/jla231202_l-pink_2-600x900.jpg" alt="Fourth Image">
+               </div>
+        <br>
+        <div class="slider-text">
+          Lawn | Printed
+          <br><br>
+         <span>  PKR 5,500</span> PKR 3,850<br><br>
+        <i >30% off</i> <em>   Exclusively Online</em>
+        </div>
+        <br>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function showNextSlide(sliderId, index) {
+      const slides = document.getElementById(sliderId);
+      index++;
+      if (index >= 2) index = 0; // Two images only, reset at the second one
+      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+      return index;
+    }
+
+    // Initialize for all sliders
+    const totalSliders = 12;
+    let indexes = new Array(totalSliders).fill(0);
+
+    for (let i = 1; i <= totalSliders; i++) {
+      setInterval(() => {
+        indexes[i - 1] = showNextSlide(`slider${i}`, indexes[i - 1]);
+      }, 3000); // Slide every 3 seconds
+    }
+  </script>
+    <br><br><br>
+<hr>
+<div class="clearfix">
+  <div class="boxs">
+    <h2>NEED HELP?</h2>
+  </div>
+  <div class="boxs">
+  <p><i class="fa fa-phone"></i>    080 74007</p>
+  </div>
+  <div class="boxs">
+  <p><i class="fa fa-envelope"></i>       EMAIL US</p>
+  </div>
+</div>
+<hr width="100%">
+
+
+<div class="clearfix">
+  <div class="box">
+    <h4 style="margin-left: 10%;">HELP</h4>
+    <p style="margin-left: 10%;">
+Track Your Order<br><br>
+Terms & Conditions<br><br>
+Privacy Policy
+    </p>
+  </div>
+  <div class="box">
+  <h4>CUSTOMERY SUPPORT</h4>
+<p>
+Customer Service<br><br>
+Store Locator<br><br>
+Disclaimer<br><br>
+Shipping & Handling<br><br>
+Returns & Exchanges<br><br>
+FAQs
+</p>
+  </div>
+  <div class="box">
+  <h4>MORE FORM KHAADI</h4>
+  <p>
+About Us<br><br>
+Contact Us<br><br>
+Blogs
+  </p>
+  </div>
+  <div class="box">
+   <h4> GET IN TOUCH</h4>
+   <p>
+0800 74007<br><br>
+customercare@khaadi.com<br><br>
+GET THE LATEST NEWS<br><br>
+Email Address <button >Confirm</button>
+   </p>
+   <hr>
+<br><br><br><br>
+    </div>
+</div>
+<br>
+<hr>
+
+<div class="clearfix">
+    <div class="man">
+        <h2 style="color: white;">jkg,jm</h2>
+      </div>
+      <br><br><br>
+      <div class="man">
+        <p><i> 100% Safe Checkout </i> </p>
+        <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw3d659671/images/FooterImages/pay.png">
+              </div>
+              
+  <div class="man">
+  <p><i>Secured by </i> </p>
+  <img src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif">
+  </div>
+
+  <div class="man">
+    <p style="margin-left: ;"><i>Copyright © 2023 Khaadi Pakistan (SMC-Pvt)    </i> </p>
+    <img src="https://pk.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dw6994d6b6/images/FooterImages/Khaadi-Logo.png" style="margin-left: 25%;width: 20%;">
+    </div>
+</div>
+    
+</body>
+</html>
